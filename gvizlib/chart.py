@@ -11,6 +11,12 @@ import pandas as pd
 import string
 import sys
 
+# Reference to this module
+this = sys.modules[__name__]
+
+# Cache to store data in session
+this.cache = []
+
 
 # TODO add method to create from dataframe
 # TODO handle when x is a date (needs to be new Date(...))
